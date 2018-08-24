@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class PreviousRotations : MonoBehaviour
 {
-    List<string> names = new List<string>() { "Code + Description if available", "Code2", "Code3", "Code4" };
+    List<string> names = new List<string>() { "Code + Description if available", "1dnq SMN", "Code3", "Code4" };
 
     public Dropdown dropdown;
     public RotationGetter linkedNum;
@@ -18,6 +18,7 @@ public class PreviousRotations : MonoBehaviour
     {
         linkedNum.SetDropdown(dropdown.value);
     }
+    public string GetName() { return names[dropdown.value]; }
     void Start()
     {
         PopulateList();

@@ -822,7 +822,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Previously used rotations
+  m_Text: 
 --- !u!222 &845656847
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1574,6 +1574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d99acd9d63abc2e4d9e4fc09f23fc34b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RotDropDown: {fileID: 1863467745}
 --- !u!114 &1863467748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1738,9 +1739,7 @@ MonoBehaviour:
   m_ItemImage: {fileID: 0}
   m_Value: 0
   m_Options:
-    m_Options:
-    - m_Text: Previously used rotations
-      m_Image: {fileID: 0}
+    m_Options: []
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
