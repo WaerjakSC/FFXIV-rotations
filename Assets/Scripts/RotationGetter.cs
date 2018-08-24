@@ -1,10 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Text.RegularExpressions;
-using System;
-using System.Net;
 
 /**
 Take a link from ffxivrotations.com and check the html for the correct rotation
@@ -23,18 +19,25 @@ If the png name doesn't match to anything known, it looks for the miniInfo and/o
  */
 public class RotationGetter : MonoBehaviour
 {
-    string RotationURL = "";
+    private string RotationURL = "";
+    private const string FFXIVLink = "http://ffxivrotations.com/";
     int DropdownChoice = 0;
-    string html;
-    string FFXIVLink = "http://ffxivrotations.com/";
     public PreviousRotations RotDropDown;
     List<string> currentLink;
+    public Text responseText;
     // Use this for initialization
     void Start()
     {
 
     }
-
+    //private IEnumerator WaitUntilResolved(WWW url)
+    //{
+    //    var engine = new Engine();
+    //    engine.OpenUrl("https://html5test.com");
+    //    Debug.Log("skillid = " + tagWithValue.InnerHTML);
+    //    yield 
+    //    responseText.text = url.text;
+    //}
     public void StartApplication()
     {
         if (!(RotationURL.Equals(""))) // If URLInput is not empty, use that
@@ -42,14 +45,13 @@ public class RotationGetter : MonoBehaviour
 
             if (RotationURL.StartsWith("http://ffxivrotations.com") || RotationURL.StartsWith("ffxivrotations.com"))
             {
-                Uri uri = new Uri(RotationURL);
-                webBrowserControl.AllowNavigation = true;
+                var driver = new PhantomJSDriver();
+
                 Debug.Log("This URL starts with http://ffxivrotations.com and is valid.");
             }
             else if (RotationURL.Length >= 1 && RotationURL.Length <= 5)
             {
                 Debug.Log("This URL doesn't start with http://ffxivrotations.com, but is a valid code.");
-
             }
             else
             {
