@@ -45,8 +45,6 @@ public class RotationGetter : MonoBehaviour
 
             if (RotationURL.StartsWith("http://ffxivrotations.com") || RotationURL.StartsWith("ffxivrotations.com"))
             {
-                var driver = new PhantomJSDriver();
-
                 Debug.Log("This URL starts with http://ffxivrotations.com and is valid.");
             }
             else if (RotationURL.Length >= 1 && RotationURL.Length <= 5)
