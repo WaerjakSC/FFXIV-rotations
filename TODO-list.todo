@@ -1,11 +1,9 @@
-    /* TODO: Write a getter to be run when Continue or Enter is pressed, which sends the name of the selected dropdown option 
-     * to the RotationGetter.
-     * 
-    */
+ ✔ Write a getter to be run when Continue or Enter is pressed, which sends the name of the selected dropdown option to the RotationGetter. @done (18-08-28 19:55)
 
 
-TODO: Set up a UI to let the player customize their hotbar layout to fit their liking 
-(First version:Enough to have side-scrolling icons with the player's keybindings super-imposed on each icon)
+
+ ☐ Set up a UI to let the player customize their hotbar layout to fit their liking
+ (First version:Enough to have side-scrolling icons with the player's keybindings super-imposed on each icon)
 
 Also - Do I actually need to switch to a new scene once a rotation has been chosen?
 Clicking Continue (or whatever) should instead show a preview of the rotation as shown on ffxivrotations.com, 
@@ -13,23 +11,23 @@ after which the player can choose to continue into the main practice part of the
 Maybe the inputfield and the rest of the UI should slide up a bit to make room for the rotation.
 
 TODO: 
-Read from ffxivrotations 
-Allow player to name and favourite rotations
-Saved rotations instead of previous rotations?
-In the preview, I may want to show skill names and additional mouseover information (also relevant stuff like which Job the rotation is for)
-Support for macros (not sure how extensive this needs to be - initially I'm thinking just some custom icons)
-Ability to build their own rotations from within the application? (beware of feature creep) 
+ ☐ Read from ffxivrotations 
+ ☐ Allow player to name and favourite rotations
+ ☐ Saved rotations instead of previous rotations?
+ ☐ In the preview, I may want to show skill names and additional mouseover information (also relevant stuff like which Job the rotation is for)
+ ☐ Support for macros (not sure how extensive this needs to be - initially I'm thinking just some custom icons)
+ ☐ Ability to build their own rotations from within the application? (beware of feature creep) 
 // On hold // 
 Somehow I need to reverse engineer these python scripts and translate the keybindings from hex to text
 And add a settings menu where the player points to their KEYBINDS.DAT file (with instructions)
 
 
 Main practice scene:
-Cast bar
-Recast timer (shown as radial fading countdown on icons?)
-Large icons for the next 2(?) abilities, then smaller icons after
-As an ability is used the icon slides away to the left
-Reset button to restart
+ ☐ Cast bar
+ ☐ Recast timer (shown as radial fading countdown on icons?)
+ ☐ Large icons for the next 2(?) abilities, then smaller icons after
+ ☐ As an ability is used the icon slides away to the left
+ ☐ Reset button to restart
 Do some research with regards to more intuitive or fun ways to do this
 
 //
